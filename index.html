@@ -48,6 +48,20 @@
 		<!-- Template Main CSS File -->
 		<link href="assets/css/main.css" rel="stylesheet" />
 
+		<!-- Google tag (gtag.js) -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-Q2GSPWFGR3"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+			gtag("config", "G-Q2GSPWFGR3");
+		</script>
+
 		<!-- =======================================================
   * Template Name: HeroBiz
   * Updated: Mar 10 2023 with Bootstrap v5.2.3
@@ -61,18 +75,18 @@
 		<!-- ======= Header ======= -->
 		<header id="header" class="header fixed-top" data-scrollto-offset="0">
 			<div
-				class="container-fluid d-flex align-items-center justify-content-between"
+				class="container-fluid d-flex row align-items-center justify-content-between"
 			>
 				<a
 					href="index.html"
-					class="logo d-flex align-items-center scrollto me-auto me-lg-0"
+					class="col logo d-flex align-items-center scrollto me-auto me-lg-0"
 				>
 					<img src="assets/img/logo.png" alt="piche-cebu-logo" />
 					<h1 class="d-none d-sm-block m-0">PIChE</h1>
 					<h1 class="d-none d-sm-block m-0"><span>Cebu</span></h1>
 				</a>
 
-				<nav id="navbar" class="navbar">
+				<nav id="navbar" class="col navbar align-items-center">
 					<ul>
 						<li>
 							<a class="nav-link scrollto" href="index.html#hero">Home</a>
@@ -82,31 +96,39 @@
 								>Membership</a
 							>
 						</li>
-						<li><a class="nav-link scrollto" href="#">Events</a></li>
 						<li>
 							<a class="nav-link scrollto" href="index.html#news">News</a>
 						</li>
-						<li><a class="nav-link scrollto" href="#">Sayod</a></li>
 						<li>
-							<a class="nav-link scrollto" href="index.html#services"
-								>Services</a
+							<a
+								class="nav-link scrollto"
+								href="http://piche.org.ph/sayod"
+								target="_blank"
+								>Sayod</a
 							>
 						</li>
 						<li>
 							<a class="nav-link scrollto" href="index.html#gallery">Gallery</a>
 						</li>
 						<li>
-							<a class="nav-link scrollto" href="index.html#about">About Us</a>
+							<a class="nav-link scrollto" href="index.html#services"
+								>Services</a
+							>
+						</li>
+
+						<li>
+							<a class="nav-link scrollto" href="about-us.html">About Us</a>
 						</li>
 						<li>
-							<a class="nav-link scrollto" href="index.html#team">FAQs</a>
+							<a class="nav-link scrollto" href="faq.html">FAQs</a>
 						</li>
 					</ul>
 					<i class="bi bi-list mobile-nav-toggle d-none"></i>
 				</nav>
 				<!-- .navbar -->
-
-				<a class="btn-getstarted scrollto" href="#">Sign Up</a>
+				<div class="col d-flex justify-content-end">
+					<a class="btn-getstarted scrollto" href="#">Sign Up</a>
+				</div>
 			</div>
 		</header>
 		<!-- End Header -->
@@ -141,7 +163,12 @@
 									links for our viewers. Proceeds go to the social programs and
 									initiatives of PIChE Cebu
 								</p>
-								<a href="#" class="btn-get-started scrollto">Learn More</a>
+								<a
+									href="http://handumanan.cebu.piche.org.ph"
+									target="_blank"
+									class="btn-get-started scrollto"
+									>Learn More</a
+								>
 							</div>
 						</div>
 					</div>
@@ -168,7 +195,12 @@
 									Netherlands to gather all the key policy & decision makers
 									from all sectors of Cebu to address the island's water crises.
 								</p>
-								<a href="#" class="btn-get-started scrollto">Learn More</a>
+								<a
+									href="https://cebuwatersummit.piche.org.ph/cws.html"
+									target="_blank"
+									class="btn-get-started scrollto"
+									>Learn More</a
+								>
 							</div>
 						</div>
 					</div>
@@ -197,7 +229,12 @@
 									profession and society, be informed of the developments of the
 									organization, and elect a new set of Board Directors.
 								</p>
-								<a href="#" class="btn-get-started scrollto">Learn More</a>
+								<a
+									href="https://cebu.piche.org.ph/pakighimamat.html "
+									target="_blank"
+									class="btn-get-started scrollto"
+									>Learn More</a
+								>
 							</div>
 						</div>
 					</div>
@@ -234,9 +271,34 @@
 		<!-- End Hero Section -->
 
 		<main id="main">
-			<!-- ======= NEWS CAROUSEL Call To Action Section ======= -->
-
-			<!-- ======= END NEWS CAROUSEL Call To Action Section ======= -->
+			<!-- ======= MEMBERSHIP Testimonials Section ======= -->
+			<section id="membership" class="testimonials">
+				<div class="container" data-aos="fade-up">
+					<div class="">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="testimonial-item">
+									<h1><b>MEMBERSHIP</b></h1>
+									<p class="">
+										Access exclusive benefits, resources, and networking
+										opportunities with PIChE Cebu.
+										<a
+											class="color-white"
+											href="https://bit.ly/PIChECebuRegister"
+											target="_blank"
+											><u><b>Join or renew</b></u></a
+										>
+										your membership today!
+									</p>
+								</div>
+							</div>
+							<!-- End testimonial item -->
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</section>
+			<!-- MEMBERSHIP End Testimonials Section -->
 
 			<!-- ======= NEWS Call To Action Section ======= -->
 			<section id="news" class="cta">
@@ -250,12 +312,21 @@
 								We are ending the year with a bang as PIChE Cebu proudly brings
 								you SAYOD, its official publication.
 							</p>
-							<a
-								class="cta-btn align-self-start"
-								href="https://www.facebook.com/pichecebuchapter/posts/201864405692496"
-								target="_blank"
-								>Read More</a
-							>
+							<div>
+								<a
+									class="cta-btn align-self-start"
+									href="https://www.facebook.com/pichecebuchapter/posts/201864405692496"
+									target="_blank"
+									>Read More</a
+								>
+
+								<a
+									class="cta-btn-invert-colors align-self-start"
+									href="news.html"
+									target="_blank"
+									>Read More News</a
+								>
+							</div>
 						</div>
 
 						<div
@@ -306,15 +377,41 @@
 						<div class="row g-0 portfolio-container">
 							<div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app">
 								<img
-									src="assets/img/samar-outreach.jpg"
+									src="assets/img/gallery/1.png"
 									class="img-fluid"
 									alt="samar-outreach"
 								/>
 								<div class="portfolio-info">
 									<h4>Paranas Samar Outreach Activity</h4>
 									<a
-										href="assets/img/samar-outreach.jpg"
-										title="Outreach activity at the remote community of Paranas, Samar. Read More."
+										href="assets/img/gallery/1.png"
+										title="Outreach activity at the remote community of Paranas, Samar."
+										data-gallery="portfolio-gallery"
+										class="glightbox preview-link"
+										><i class="bi bi-zoom-in"></i
+									></a>
+									<a
+										href="https://www.facebook.com/pichecebuchapter/posts/pfbid02qBUN2h5zmJDC3yLrr5avDt9EhbWfssKR5pFX8NeHc3fp54KVtzpoDYCmMg3L6Gdl"
+										title="More Details"
+										class="details-link"
+										target="_blank"
+										><i class="bi bi-link-45deg"></i
+									></a>
+								</div>
+							</div>
+							<!--GALLERY End Portfolio Item -->
+
+							<div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app">
+								<img
+									src="assets/img/gallery/2.png"
+									class="img-fluid"
+									alt="samar-outreach"
+								/>
+								<div class="portfolio-info">
+									<h4>Paranas Samar Outreach Activity</h4>
+									<a
+										href="assets/img/gallery/2.png"
+										title="Outreach activity at the remote community of Paranas, Samar."
 										data-gallery="portfolio-gallery"
 										class="glightbox preview-link"
 										><i class="bi bi-zoom-in"></i
@@ -333,11 +430,63 @@
 							<div
 								class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-product"
 							>
-								<img src="assets/img/cws.jpg" class="img-fluid" alt="cws" />
+								<img
+									src="assets/img/gallery/3.png"
+									class="img-fluid"
+									alt="cws"
+								/>
 								<div class="portfolio-info">
 									<h4>Cebu Water Summit Opening</h4>
 									<a
-										href="assets/img/cws.jpg"
+										href="assets/img/gallery/3.png"
+										title="Turning The Tide Together. The symbolic opening of the first Cebu Water Summit."
+										data-gallery="portfolio-gallery"
+										class="glightbox preview-link"
+										><i class="bi bi-zoom-in"></i
+									></a>
+									<a href="#" title="More Details" class="details-link"
+										><i class="bi bi-link-45deg"></i
+									></a>
+								</div>
+							</div>
+							<!--GALLERY End Portfolio Item -->
+
+							<div
+								class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-product"
+							>
+								<img
+									src="assets/img/gallery/4.png"
+									class="img-fluid"
+									alt="cws"
+								/>
+								<div class="portfolio-info">
+									<h4>Cebu Water Summit Opening</h4>
+									<a
+										href="assets/img/gallery/4.png"
+										title="Turning The Tide Together. The symbolic opening of the first Cebu Water Summit."
+										data-gallery="portfolio-gallery"
+										class="glightbox preview-link"
+										><i class="bi bi-zoom-in"></i
+									></a>
+									<a href="#" title="More Details" class="details-link"
+										><i class="bi bi-link-45deg"></i
+									></a>
+								</div>
+							</div>
+							<!--GALLERY End Portfolio Item -->
+
+							<div
+								class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-product"
+							>
+								<img
+									src="assets/img/gallery/5.png"
+									class="img-fluid"
+									alt="cws"
+								/>
+								<div class="portfolio-info">
+									<h4>Cebu Water Summit Opening</h4>
+									<a
+										href="assets/img/gallery/5.png"
 										title="Turning The Tide Together. The symbolic opening of the first Cebu Water Summit."
 										data-gallery="portfolio-gallery"
 										class="glightbox preview-link"
@@ -354,14 +503,14 @@
 								class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-branding"
 							>
 								<img
-									src="assets/img/smart-classroom.jpg"
+									src="assets/img/gallery/6.png"
 									class="img-fluid"
 									alt="smart-classroom"
 								/>
 								<div class="portfolio-info">
 									<h4>USC ChE Alumni donates Smart Classroom</h4>
 									<a
-										href="assets/img/smart-classroom.jpg"
+										href="assets/img/gallery/6.png"
 										title="USC Chemical Engineering alumni in collaboration with USC Chemical Engineering Society donates smart classroom to be named after PIChE Cebu Founder Engr. Elsa Pilapil Roska."
 										data-gallery="portfolio-gallery"
 										class="glightbox preview-link"
@@ -378,19 +527,137 @@
 								class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-books"
 							>
 								<img
-									src="assets/img/cebu-septage-meeting.jpg"
+									src="assets/img/gallery/7.png"
 									class="img-fluid"
 									alt="cebu-septage-meeting"
 								/>
 								<div class="portfolio-info">
-									<h4>
-										PIChE joins the Cebu Septage Management Board Meeting on
-										January 12 2023 at DENR EMB Region 7 Office, Banilad,
-										Mandaue City.
-									</h4>
+									<h4>PIChE joins the Cebu Septage Management Board Meeting</h4>
 									<a
-										href="assets/img/cebu-septage-meeting.jpg"
-										title="Branding 3"
+										href="assets/img/gallery/7.png"
+										title="PIChE joins the Cebu Septage Management Board Meeting on
+										January 12 2023 at DENR EMB Region 7 Office, Banilad,
+										Mandaue City."
+										data-gallery="portfolio-gallery"
+										class="glightbox preview-link"
+										><i class="bi bi-zoom-in"></i
+									></a>
+									<a href="#" title="More Details" class="details-link"
+										><i class="bi bi-link-45deg"></i
+									></a>
+								</div>
+							</div>
+							<!--GALLERY End Portfolio Item -->
+
+							<div
+								class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-books"
+							>
+								<img
+									src="assets/img/gallery/8.png"
+									class="img-fluid"
+									alt="cebu-septage-meeting"
+								/>
+								<div class="portfolio-info">
+									<h4>Lorem ipsum dolor sit amet</h4>
+									<a
+										href="assets/img/gallery/8.png"
+										title="Lorem ipsum dolor sit amet"
+										data-gallery="portfolio-gallery"
+										class="glightbox preview-link"
+										><i class="bi bi-zoom-in"></i
+									></a>
+									<a href="#" title="More Details" class="details-link"
+										><i class="bi bi-link-45deg"></i
+									></a>
+								</div>
+							</div>
+							<!--GALLERY End Portfolio Item -->
+
+							<div
+								class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-books"
+							>
+								<img
+									src="assets/img/gallery/9.png"
+									class="img-fluid"
+									alt="cebu-septage-meeting"
+								/>
+								<div class="portfolio-info">
+									<h4>Lorem ipsum dolor sit amet</h4>
+									<a
+										href="assets/img/gallery/9.png"
+										title="Lorem ipsum dolor sit amet"
+										data-gallery="portfolio-gallery"
+										class="glightbox preview-link"
+										><i class="bi bi-zoom-in"></i
+									></a>
+									<a href="#" title="More Details" class="details-link"
+										><i class="bi bi-link-45deg"></i
+									></a>
+								</div>
+							</div>
+							<!--GALLERY End Portfolio Item -->
+
+							<div
+								class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-books"
+							>
+								<img
+									src="assets/img/gallery/10.png"
+									class="img-fluid"
+									alt="cebu-septage-meeting"
+								/>
+								<div class="portfolio-info">
+									<h4>Lorem ipsum dolor sit amet</h4>
+									<a
+										href="assets/img/gallery/10.png"
+										title="Lorem ipsum dolor sit amet"
+										data-gallery="portfolio-gallery"
+										class="glightbox preview-link"
+										><i class="bi bi-zoom-in"></i
+									></a>
+									<a href="#" title="More Details" class="details-link"
+										><i class="bi bi-link-45deg"></i
+									></a>
+								</div>
+							</div>
+							<!--GALLERY End Portfolio Item -->
+
+							<div
+								class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-books"
+							>
+								<img
+									src="assets/img/gallery/11.png"
+									class="img-fluid"
+									alt="cebu-septage-meeting"
+								/>
+								<div class="portfolio-info">
+									<h4>Lorem ipsum dolor sit amet</h4>
+									<a
+										href="assets/img/gallery/11.png"
+										title="Lorem ipsum dolor sit amet"
+										data-gallery="portfolio-gallery"
+										class="glightbox preview-link"
+										><i class="bi bi-zoom-in"></i
+									></a>
+									<a href="#" title="More Details" class="details-link"
+										><i class="bi bi-link-45deg"></i
+									></a>
+								</div>
+							</div>
+							<!--GALLERY End Portfolio Item -->
+
+							<div
+								class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-books"
+							>
+								<img
+									src="assets/img/gallery/12.png"
+									class="img-fluid"
+									alt="cebu-septage-meeting"
+								/>
+								<div class="portfolio-info">
+									<h4>Lorem ipsum dolor sit amet</h4>
+									<a
+										href="assets/img/gallery/12.png"
+										title="Lorem ipsum dolor sit amet"
 										data-gallery="portfolio-gallery"
 										class="glightbox preview-link"
 										><i class="bi bi-zoom-in"></i
@@ -407,21 +674,6 @@
 				</div>
 			</section>
 			<!--GALLERY End Portfolio Section -->
-
-			<!-- =======MEMBERSHIP  About Section ======= -->
-			<section id="membership" class="about">
-				<div class="container" data-aos="fade-up">
-					<div class="section-header">
-						<h2>Membership</h2>
-						<p>
-							Access exclusive benefits, resources, and networking opportunities
-							with PIChE Cebu. <span><a href="#">Join or renew</a> </span>your
-							membership today!
-						</p>
-					</div>
-				</div>
-			</section>
-			<!--MEMBERSHIP End About Section -->
 		</main>
 		<!-- End #main -->
 
@@ -467,22 +719,23 @@
 							<h4>Useful Links</h4>
 							<ul>
 								<li>
-									<i class="bi bi-chevron-right"></i> <a href="#">Home</a>
+									<i class="bi bi-chevron-right"></i> <a href="#hero">Home</a>
 								</li>
 								<li>
 									<i class="bi bi-chevron-right"></i>
-									<a href="#">Membership</a>
+									<a href="#membership">Membership</a>
 								</li>
 								<li>
 									<i class="bi bi-chevron-right"></i>
-									<a href="#">Events</a>
-								</li>
-								<li>
-									<i class="bi bi-chevron-right"></i> <a href="#">News</a>
+									<a href="#news">News</a>
 								</li>
 								<li>
 									<i class="bi bi-chevron-right"></i>
-									<a href="#">Sayod</a>
+									<a href="http://piche.org.ph/sayod">Sayod</a>
+								</li>
+								<li>
+									<i class="bi bi-chevron-right"></i>
+									<a href="#gallery">Gallery</a>
 								</li>
 							</ul>
 						</div>
