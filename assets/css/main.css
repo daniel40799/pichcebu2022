@@ -722,7 +722,7 @@ section {
 
 @media (max-width: 640px) {
 	.hero .container {
-		padding: 0 60px;
+		padding: 0 30px;
 	}
 }
 
@@ -1246,7 +1246,7 @@ section {
 
 /* MEMBERSHIP SECTION */
 .membership-btn {
-	color: rgba(var(--color-primary-dark-rgb));
+	color: #000000;
 	font-weight: 500;
 	font-size: 16px;
 	display: inline-block;
