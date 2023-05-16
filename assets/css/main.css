@@ -1244,6 +1244,35 @@ section {
 	opacity: 1;
 }
 
+/* MEMBERSHIP SECTION */
+.membership-btn {
+	color: rgba(var(--color-primary-dark-rgb));
+	font-weight: 500;
+	font-size: 16px;
+	display: inline-block;
+	padding: 12px 40px;
+	border-radius: 5px;
+	transition: 0.5s;
+	margin-top: 10px;
+	background: #ffffff;
+}
+
+.membership-btn-invert-colors {
+	color: var(--color-primary-dark-rgb, 0.9);
+	font-weight: 500;
+	font-size: 16px;
+	display: inline-block;
+	padding: 12px 40px;
+	border-radius: 5px;
+	transition: 0.5s;
+	margin-top: 10px;
+	background: rgba(var(--color-white));
+	border: 1px rgba(var(--color-primary-dark-rgb));
+	border-style: solid;
+	border-radius: 5px;
+}
+/* MEMBERSHIP SECTION */
+
 /*--------------------------------------------------------------
 # Call To Action Section
 --------------------------------------------------------------*/
